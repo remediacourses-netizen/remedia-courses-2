@@ -1,0 +1,164 @@
+{% extends 'base.html' %}
+{% block title %}Домашние задания для проверки{% endblock %}
+{% block content %}
+<style>
+    /* ===== СТРАНИЦА ПРОВЕРКИ ДОМАШНИХ ЗАДАНИЙ ===== */
+.submissions-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.submissions-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    padding: 0;
+    list-style: none;
+}
+
+.submission-item {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: var(--card-shadow);
+    border-left: 4px solid var(--primary);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.submission-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--card-hover-shadow);
+}
+
+.submission-item h3 {
+    color: var(--text-dark);
+    margin-top: 0;
+    font-size: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(37, 99, 235, 0.1);
+}
+
+.submission-item p {
+    margin: 0;
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.submission-item p strong {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+/* Статусы */
+.submission-status {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+.status-pending {
+    background: #ebf8ff;
+    color: #3182ce;
+}
+
+.status-checked {
+    background: #f0fff4;
+    color: #38a169;
+}
+
+/* Кнопка */
+.submission-item form button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0.8rem;
+    align-self: flex-start;
+}
+
+.submission-item form button:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Заголовок страницы */
+h2 {
+    font-size: 2.2rem;
+    color: var(--text-dark);
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    border-radius: 2px;
+}
+
+/* Сообщение об отсутствии заданий */
+.submissions-container > p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-light);
+    padding: 2rem;
+    background: var(--bg-light);
+    border-radius: 10px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .submissions-list {
+        grid-template-columns: 1fr;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+</style>
+
+
+<div class="submissions-container">
+    <h2>Проверка домашних заданий</h2>
+
+    {% if submissions %}
+    <ul class="submissions-list">
+        {% for sub in submissions %}
+        <li class="submission-item">
+            <h3>{{ sub.lesson.title }}</h3>
+            <p><strong>Ученик:</strong> {{ sub.student.get_full_name }}</p>
+            <p><strong>Отправлено:</strong> {{ sub.submitted_at|date:"d.m.Y H:i" }}</p>
+            <p class="submission-status status-{% if sub.checked %}checked{% else %}pending{% endif %}">
+                <strong>Статус:</strong> {% if sub.checked %}Проверено{% else %}Ожидает проверки{% endif %}
+            </p>
+            <form method="get" action="{% url 'check_homework' sub.id %}">
+                <button type="submit">
+                    {% if sub.checked %}Просмотр{% else %}Проверить{% endif %}
+                </button>
+            </form>
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>Пока нет домашних заданий для проверки.</p>
+    {% endif %}
+</div>
+
+{% endblock %}

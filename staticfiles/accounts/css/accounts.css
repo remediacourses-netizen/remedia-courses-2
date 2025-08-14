@@ -1,0 +1,145 @@
+/* Цветовые переменные — элегантный сине-фиолетовый стиль */
+:root {
+    --bg: #0f0c29;
+    /* Глубокий тёмно-синий фон */
+    --bg-light: #1a1a40;
+    /* Более светлый фон элементов */
+    --text: #e6f7ff;
+    /* Мягкий голубоватый текст */
+    --text-light: #a3c7d6;
+    /* Вторичный текст */
+    --input-bg: #24245b;
+    /* Фон полей ввода */
+    --border: #3d3d7a;
+    /* Границы элементов */
+    --accent: #6a5acd;
+    /* Основной акцент (SlateBlue) */
+    --accent-dark: #483d8b;
+    /* Тёмный акцент (DarkSlateBlue) */
+    --accent-light: #9370db;
+    /* Светлый акцент (MediumPurple) */
+    --glow: 0 0 15px rgba(106, 90, 205, 0.7);
+    /* Свечение акцентных элементов */
+    --error-bg: #2a0f2a;
+    /* Фон ошибок */
+    --error-border: #8a2be2;
+    /* Граница ошибок */
+    --error-text: #e6a8e6;
+    /* Текст ошибок */
+}
+
+/* Основное оформление (без изменений структуры) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+}
+
+/* Контейнер регистрации (сохранена структура) */
+.registration-container {
+    max-width: 480px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: var(--bg-light);
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    box-shadow: var(--glow), 0 0 25px rgba(106, 90, 205, 0.15);
+}
+
+/* Заголовок шага (адаптирован под новую палитру) */
+.step-title {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: var(--accent-light);
+    text-shadow: 0 0 5px rgba(147, 112, 219, 0.5);
+}
+
+/* Форма регистрации (полностью сохранена структура) */
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Поля ввода (адаптированы цвета, сохранены все свойства) */
+.registration-form input,
+.registration-form select {
+    padding: 12px 14px;
+    font-size: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--input-bg);
+    color: var(--text);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.registration-form input:focus,
+.registration-form select:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 6px var(--accent);
+    outline: none;
+}
+
+/* Кнопка (цвета изменены, структура сохранена) */
+.submit-button {
+    background-color: var(--accent);
+    color: #fff;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: var(--accent-dark);
+    box-shadow: 0 0 10px var(--accent);
+}
+
+/* Метки (цвет текста адаптирован) */
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+/* Блоки ошибок (переведены в фиолетовую гамму) */
+.error-block,
+.error-messages {
+    background-color: var(--error-bg);
+    border: 1px solid var(--error-border);
+    color: var(--error-text);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.error-messages {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Адаптив (полностью сохранен) */
+@media (max-width: 600px) {
+    .registration-container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .step-title {
+        font-size: 1.4rem;
+    }
+
+    .submit-button {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+}

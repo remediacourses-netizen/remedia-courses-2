@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+    :root {
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
+    --secondary: #3b82f6;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --bg-light: #f8fafc;
+    --card-bg: #ffffff;
+    --card-border: rgba(37, 99, 235, 0.1);
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    --card-hover-shadow: 0 10px 25px rgba(37, 99, 235, 0.15);
+}
+
+.my-homeworks-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.my-homeworks-header {
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.my-homeworks-title {
+    font-size: 2.4rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+/* Сетка карточек */
+.homework-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.8rem;
+    margin-top: 1rem;
+}
+
+/* Карточки */
+.homework-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 1.8rem;
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease;
+    border: 1px solid var(--card-border);
+}
+
+.homework-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-hover-shadow);
+}
+
+.homework-card h3 {
+    color: var(--primary);
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+}
+
+.homework-card p {
+    margin: 0.7rem 0;
+    color: var(--text-dark);
+    line-height: 1.5;
+}
+
+/* Статус */
+.homework-status {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.status-pending {
+    background: rgba(37, 99, 235, 0.1);
+    color: var(--primary);
+}
+
+.status-checked {
+    background: rgba(52, 211, 153, 0.1);
+    color: #10b981;
+}
+
+/* Комментарий */
+.homework-comment {
+    background: rgba(249, 168, 37, 0.08);
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 3px solid rgba(249, 168, 37, 0.3);
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.homework-comment strong {
+    color: #f9a825;
+}
+
+/* Пустое состояние */
+.homework-empty {
+    text-align: center;
+    padding: 3rem;
+    background: var(--card-bg);
+    border-radius: 12px;
+    border: 1px dashed var(--card-border);
+    margin-top: 2rem;
+}
+
+/* Анимации */
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.homework-card {
+    animation: cardEntrance 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+.homework-card:nth-child(1) { animation-delay: 0.1s; }
+.homework-card:nth-child(2) { animation-delay: 0.2s; }
+.homework-card:nth-child(3) { animation-delay: 0.3s; }
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .homework-cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+<div class="my-homeworks-container">
+    <div class="my-homeworks-header">
+        <h1 class="my-homeworks-title">Мои домашки</h1>
+    </div>
+
+    {% if submissions %}
+    <div class="homework-cards-grid">
+        {% for submission in submissions %}
+        <div class="homework-card">
+            <h3>{{ submission.lesson.title }}</h3>
+            <p><strong>Ответ:</strong> {{ submission.answer|truncatechars:120 }}</p>
+
+            {% if submission.comment %}
+            <div class="homework-comment">
+                <strong>Комментарий:</strong>
+                <p>{{ submission.comment }}</p>
+            </div>
+            {% endif %}
+
+            <span class="homework-status {% if submission.checked %}status-checked{% else %}status-pending{% endif %}">
+                {% if submission.checked %}✅ Проверено{% else %}⏳ Ожидает проверки{% endif %}
+            </span>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="homework-empty">
+        <p>Вы ещё не отправляли домашних заданий.</p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Профиль</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'accounts/css/profile.css' %}?v=2">
+</head>
+
+<style>
+    .back-link {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: inline-block;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 2rem auto;
+        padding: 0.75rem 1.5rem;
+        color: white;
+        cursor: pointer;
+        font-weight: 500;
+        border: none;
+        border-radius: 8px;
+        background-color: #6a5acd;
+        /* SlateBlue */
+        text-decoration: none;
+        /* чтобы не мигало подчёркивание */
+        transition: background-color 0.3s ease, box-shadow 0.2s ease;
+    }
+
+    .back-link:hover {
+        background-color: #483d8b;
+        /* DarkSlateBlue */
+        box-shadow: 0 0 8px rgba(106, 90, 205, 0.4);
+    }
+</style>
+
+<body>
+    <div class="navigation-links">
+        <a href="{% url 'home' %}" class="back-link">⬅ На главную</a>
+    </div>
+
+    <div class="registration-container">
+        <h2 class="step-title">Профиль</h2>
+        <div class="profile-info">
+            <p><strong>Имя:</strong> {{ user.first_name }}</p>
+            <p><strong>Фамилия:</strong> {{ user.last_name }}</p>
+            <p><strong>Логин:</strong> {{ user.username }}</p>
+            <p><strong>Роль:</strong> {{ role|default:"Не указана" }}
+            <p>
+                <strong>Предметы:</strong>
+                {% if role == 'Админ' %}
+                Админские
+                {% elif subjects %}
+                {% for subject in subjects %}
+                {{ subject.name }}{% if not forloop.last %}, {% endif %}
+                {% endfor %}
+                {% else %}
+                Не выбраны
+                {% endif %}
+            </p>
+
+            {% if role == 'Ученик' %}
+            <p><strong>Преподаватели:</strong>
+                {% if student_teachers %}
+                {% for subject, teacher in student_teachers.items %}
+                {{ subject }}: {{ teacher.get_full_name }}{% if not forloop.last %}, {% endif %}<br>
+                {% endfor %}
+                {% else %}
+                Не выбраны
+                {% endif %}
+            </p>
+            {% endif %}
+        </div>
+        <!--<a href="{% url 'edit_profile' %}" class="submit-button">Редактировать профиль</a>-->
+        <form method="post" action="{% url 'logout' %}">
+            {% csrf_token %}
+            <button type="submit" class="logout-button">Выйти</button>
+        </form>
+    </div>
+</body>
+
+</html>

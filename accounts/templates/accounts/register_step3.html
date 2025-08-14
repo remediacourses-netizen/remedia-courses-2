@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Шаг 3: Выбор преподавателей</title>
+    <link rel="stylesheet" href="{% static 'css/accounts.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="registration-container">
+        <h2 class="step-title">Шаг 3: Выбор преподавателей</h2>
+
+        {% if errors %}
+        <div class="error-block">
+            <p>Пожалуйста, выберите преподавателя для каждого предмета.</p>
+        </div>
+        {% endif %}
+
+        <form method="post" class="registration-form">
+            {% csrf_token %}
+            {% for item in subject_teachers %}
+            <div class="form-group">
+                <label for="teacher_{{ item.subject.id }}">{{ item.subject.name }}</label>
+                <select name="teacher_{{ item.subject.id }}" id="teacher_{{ item.subject.id }}">
+                    <option value="">— выберите преподавателя —</option>
+                    {% for teacher in item.teachers %}
+                    <option value="{{ teacher.id }}">
+                        {{ teacher.get_full_name }}
+                    </option>
+                    {% endfor %}
+                </select>
+            </div>
+            {% endfor %}
+
+            <button type="submit" class="submit-button">Завершить регистрацию</button>
+        </form>
+    </div>
+</body>
+
+</html>

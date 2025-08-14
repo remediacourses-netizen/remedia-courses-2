@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+venv/
+
+# Environment
+.env
+client_secret.json
+token.pickle
+
+# Node
+node_modules/
+
+# IDE
+.vscode/
+.idea/

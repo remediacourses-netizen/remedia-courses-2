@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    .pagination {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .pagination a {
+        padding: 0.5rem 1rem;
+        margin: 0 5px;
+        text-decoration: none;
+        background: #e0e0e0;
+        color: #333333;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+    }
+
+    .pagination a:hover {
+        background: #2563eb;
+        color: white;
+    }
+
+    .pagination a.active {
+        background: #2563eb;
+        color: white;
+        font-weight: bold;
+    }
+
+    .courses_page {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .course-card {
+        background-color: rgba(37, 99, 235, 0.3);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 1.5rem;
+    }
+
+    .whatsapp-link {
+        display: inline-block;
+        margin-top: 0.5rem;
+        padding: 0.6rem 1.2rem;
+        background-color: #25D366;
+        /* фирменный цвет Telegram */
+        color: white;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        transition: background-color 0.3s ease;
+        font-weight: bold;
+    }
+
+    .whatsapp-link:hover {
+        background-color: #249736;
+        color: white;
+    }
+
+    /* 📱 Адаптив под мобильные устройства */
+    @media (max-width: 768px) {
+        .courses_page {
+            grid-template-columns: 1fr;
+            /* 1 колонка на маленьких экранах */
+        }
+
+        .course-card {
+            padding: 1rem;
+        }
+
+    }
+</style>
+<h2>Информация о курсах</h2>
+<main>
+    <div class="courses_page">
+        {% for b in page_obj %}
+        <div class='course-card'>
+            <h2>{{ b.subject }}</h2>
+            <p class="course_decription">{{ b.description|linebreaks }}</p>
+            <a href="https://wa.me/message/VTYYIOFRGLSSD1" target="_blank" class="whatsapp-link">
+                Перейти в чат WhatsApp→
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</main>
+<div class="pagination">
+    {% if page_obj.has_previous %}
+    <a href="?page={{ page_obj.previous_page_number }}">« Назад</a>
+    {% endif %}
+    {% for num in page_obj.paginator.page_range %}
+    <a href="?page={{ num }}" class="{% if page_obj.number == num %}active{% endif %}">{{ num }}</a>
+    {% endfor %}
+    {% if page_obj.has_next %}
+    <a href="?page={{ page_obj.next_page_number }}">Вперёд »</a>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Шаг 1 из 3 – Регистрация</title>
+    <link rel="stylesheet" href="{% static 'css/accounts.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="registration-container">
+        <h2 class="step-title">Шаг 1: Создание аккаунта</h2>
+
+        <form method="post" class="registration-form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="submit-button">Далее →</button>
+        </form>
+
+        {% if messages %}
+        <ul class="error-messages">
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+</body>
+
+</html>

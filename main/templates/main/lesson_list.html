@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2 class="lesson-header">{{ module.subject.name }} — {{ module.title }}</h2>
+
+<div class="lesson-cards">
+    {% for lesson in lessons %}
+    <div class="lesson-card">
+        <a href="{% url 'lesson_detail' lesson.pk %}">
+            <h3 class="lesson-title">{{ lesson.title }}</h3>
+        </a>
+    </div>
+    {% empty %}
+    <p class="no-lessons">Пока нет уроков в этом модуле.</p>
+    {% endfor %}
+</div>
+
+<a class="back-link" href="{% url 'module_list' module.subject.id %}">← Назад к модулям</a>
+{% endblock %}

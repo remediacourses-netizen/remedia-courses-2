@@ -1,0 +1,1 @@
+echo "# Remedia Courses Platform" > README.md

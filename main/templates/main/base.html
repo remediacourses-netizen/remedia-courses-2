@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}REMEDIA{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/homework.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="{% static 'main/js/script.js' %}"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container-nav">
+            <a href="{% url 'home' %}" class="logo">REMEDIA</a>
+
+            <!-- Десктоп-меню -->
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="{% url 'home' %}">Главная</a></li>
+                    <li><a href="{% url 'about_courses' %}">О курсах</a></li>
+                    <li><a href="{% url 'blog' %}">Блоги</a></li>
+                    {% if user.is_student %}
+                    <li><a href="{% url 'subject_list' %}">Модули</a></li>
+                    <li><a href="{% url 'my_submissions' %}">Мои домашки</a></li>
+                    <li><a href="{% url 'library_subject_list' %}">Библиотека</a></li>
+                    {% elif user.is_teacher %}
+                    <li><a href="{% url 'teacher_homework_list' %}">Домашние работы</a></li>
+                    {% endif %}
+
+                    <li><a href="{% url 'profile' %}"><i class="fa-solid fa-user icons-nav"></i></a></li>
+                </ul>
+            </nav>
+
+            <!-- Иконка (показывается только на мобилке) -->
+            <button id="mobile-toggle" class="mobile-toggle" aria-expanded="false" aria-controls="mobile-menu"
+                aria-label="Открыть меню">
+                <i class="fas fa-outdent"></i>
+            </button>
+        </div>
+
+        <!-- Выезжающая мобильная панель -->
+        <aside id="mobile-menu" class="mobile-menu" aria-hidden="true">
+            <button id="mobile-close" class="closebtn" aria-label="Закрыть меню">&times;</button>
+            <ul class="mobile-nav-links">
+                <li><a href="{% url 'home' %}">Главная</a></li>
+                <li><a href="{% url 'about_courses' %}">О курсах</a></li>
+                <li><a href="{% url 'blog' %}">Блоги</a></li>
+                {% if user.is_student %}
+                <li><a href="{% url 'subject_list' %}">Модули</a></li>
+                <li><a href="{% url 'my_submissions' %}">Мои домашки</a></li>
+                <li><a href="{% url 'library_subject_list' %}">Библиотека</a></li>
+                <li><a href="{% url 'blog' %}">Блоги</a></li>
+                {% elif user.is_teacher %}
+                <li><a href="{% url 'teacher_homework_list' %}">Домашние работы</a></li>
+                {% endif %}
+
+                <li><a href="{% url 'profile' %}"><i class="fa-solid fa-user icons-nav"></i></a></li>
+            </ul>
+        </aside>
+
+        <!-- Полупрозрачный фон при открытой панели -->
+        <div id="mobile-overlay" class="mobile-overlay" tabindex="-1"></div>
+    </header>
+
+
+
+    <main class="main-content">
+        {% block content %}
+        <!-- Контент под каждую страницу -->
+        {% endblock %}
+    </main>
+</body>
+
+</html>

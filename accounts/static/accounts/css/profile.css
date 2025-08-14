@@ -1,0 +1,218 @@
+/* ====== ОБЩИЕ СТИЛИ: СИНЕ-ФИОЛЕТОВЫЙ САЙТ ПРОФИЛЯ ====== */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0f0c29;
+    /* Глубокий тёмно-синий фон */
+    color: #e6f7ff;
+    /* Мягкий голубоватый текст */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ====== Навигация "назад" в углу ====== */
+.navigation-links {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navigation-links a {
+    color: #fff;
+    /* Светлый акцент (MediumPurple) */
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* ====== Контейнер профиля / редактирования ====== */
+.registration-container {
+    background-color: #1a1a40;
+    /* Более светлый фон элементов */
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(106, 90, 205, 0.25);
+    /* Сине-фиолетовая тень */
+    width: 90%;
+    max-width: 600px;
+    border: 1px solid #3d3d7a;
+    /* Границы элементов */
+}
+
+/* ====== Заголовок ====== */
+.step-title {
+    text-align: center;
+    color: #9370db;
+    /* Светлый акцент (MediumPurple) */
+    font-size: 26px;
+    margin-bottom: 30px;
+    text-shadow: 0 0 8px rgba(147, 112, 219, 0.5);
+    /* Фиолетовое свечение */
+}
+
+/* ====== Профиль: текст информации ====== */
+.profile-info p {
+    margin: 15px 0;
+    font-size: 17px;
+    color: #a3c7d6;
+    /* Вторичный текст */
+}
+
+/* ====== Форма редактирования ====== */
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ====== Поля ввода ====== */
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form select,
+.registration-form textarea {
+    background-color: #24245b;
+    /* Фон полей ввода */
+    color: #e6f7ff;
+    /* Основной текст */
+    border: 1px solid #3d3d7a;
+    /* Границы элементов */
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.registration-form input:focus,
+.registration-form select:focus,
+.registration-form textarea:focus {
+    border-color: #6a5acd;
+    /* Основной акцент */
+    box-shadow: 0 0 6px rgba(106, 90, 205, 0.4);
+    /* Сине-фиолетовое свечение */
+    outline: none;
+}
+
+/* ====== Кнопки ====== */
+.submit-button,
+.logout-button {
+    background-color: #6a5acd;
+    /* Основной акцент (SlateBlue) */
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.2s ease;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.submit-button:hover,
+.logout-button:hover {
+    background-color: #483d8b;
+    /* Тёмный акцент (DarkSlateBlue) */
+    box-shadow: 0 0 8px rgba(106, 90, 205, 0.4);
+    /* Сине-фиолетовое свечение */
+}
+
+/* Сообщения */
+.messages {
+    margin-top: 1rem;
+}
+
+.message {
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.message.success {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.message.error {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.message.warning {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+/* ====== Адаптивность ====== */
+@media (max-width: 500px) {
+    body {
+        padding-top: 20px;
+        /* ближе к верху */
+    }
+
+    .registration-container {
+        padding: 25px;
+        max-width: 95%;
+        /* чуть шире */
+    }
+
+    .step-title {
+        font-size: 24px;
+        /* крупнее заголовок */
+    }
+
+    .profile-info p {
+        font-size: 18px;
+        /* текст крупнее */
+    }
+
+    .registration-form input,
+    .registration-form select,
+    .registration-form textarea {
+        font-size: 16px;
+        /* текст в полях крупнее */
+        padding: 14px 16px;
+        /* чуть больше паддингов */
+    }
+
+    .submit-button,
+    .logout-button {
+        font-size: 18px;
+        /* крупнее кнопки */
+        padding: 14px 20px;
+    }
+
+    .navigation-links {
+        position: absolute;
+        top: 10px;
+        /* поднимаем ближе к верху */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999;
+        margin-top: 0;
+
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}

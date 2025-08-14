@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% if role == 'student' %}
+        Шаг 2: Предметы для изучения
+        {% else %}
+        Шаг 2: Предметы для преподавания
+        {% endif %}
+    </title>
+    <link rel="stylesheet" href="{% static 'css/accounts.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="registration-container">
+        <h2 class="step-title">
+            {% if role == 'student' %}
+            Шаг 2: Предметы для изучения
+            {% else %}
+            Шаг 2: Предметы для преподавания
+            {% endif %}
+        </h2>
+
+        <form method="post" class="registration-form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="submit-button">
+                {% if role == 'student' %}
+                К выбору преподавателей →
+                {% else %}
+                Завершить регистрацию
+                {% endif %}
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>

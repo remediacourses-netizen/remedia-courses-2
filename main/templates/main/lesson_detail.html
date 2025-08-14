@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load filename_filters %}
+{% block content %}
+<h2 class="lesson-header">{{ lesson.title }}</h2>
+
+<div class="lesson-card">
+    <!-- Видео -->
+    <div class="lesson-video">
+        {% if lesson.video_url %}
+        <iframe src="{{ lesson.get_embed_url }}" frameborder="0" allowfullscreen></iframe>
+        {% else %}
+        <p>Видео не добавлено.</p>
+        {% endif %}
+    </div>
+
+
+    <!-- Задание -->
+    <div class="lesson-task">
+        <h3>Задание к уроку:</h3>
+
+        {% if lesson.task_files.all %}
+        <ul>
+            {% for task_file in lesson.task_files.all %}
+            <li><a href="{{ task_file.file.url }}" download>📎 {{ task_file.file.name|basename }}</a></li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p>Задание пока не добавлено.</p>
+        {% endif %}
+
+        {% if lesson.task_url %}
+        <div class="practical-task">
+            <span class="label">Практическое задание</span>
+            <span class="divider">|</span>
+            <a href="{{ lesson.task_url }}" target="_blank" class="task-link">Перейти</a>
+        </div>
+        {% endif %}
+    </div>
+
+
+
+    <!-- Форма отправки -->
+    <div class="homework-form">
+        <form action="{% url 'submit_homework' lesson.id %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label for="answer">Ответ:</label>
+            <textarea name="answer" id="answer" rows="4" required></textarea>
+
+            <label for="file">Файл (необязательно):</label>
+            <input type="file" name="file" id="file">
+            <small>Форматы: PDF, DOCX, ZIP, PNG, JPG</small>
+
+            <button type="submit" class="submit-btn">Отправить домашку</button>
+        </form>
+
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li class="{{ message.tags }}">{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+</div>
+
+<a class="back-link" href="{% url 'lesson_list' lesson.module.id %}">← Назад к урокам</a>
+
+{% endblock %}

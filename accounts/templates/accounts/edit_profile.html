@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Редактировать профиль</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+</head>
+
+<body>
+    <div class="navigation-links">
+        <a href="{% url 'profile' %} " class="back-link">⬅ Назад в профиль</a>
+    </div>
+
+    <div class="registration-container">
+        <h2 class="step-title">Редактировать профиль</h2>
+        <form method="post" class="registration-form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="submit-button">Сохранить</button>
+        </form>
+        <a href="{% url 'password_change' %}" class="submit-button">
+            Сменить пароль
+        </a>
+        {% if messages %}
+        <div class="messages">
+            {% for message in messages %}
+            <div class="message {{ message.tags }}">{{ message }}</div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+
+</body>
+
+</html>

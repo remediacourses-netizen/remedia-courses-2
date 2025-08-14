@@ -1,0 +1,105 @@
+/* ===== СИНЕ-ФИОЛЕТОВЫЙ СТИЛЬ ВХОДА ===== */
+
+/* Шрифт и фон */
+.login-body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* sci-fi шрифт сохранён */
+    background-color: #0f0c29;
+    /* глубокий тёмно-синий фон */
+    margin: 0;
+    padding: 0;
+    color: #e6f7ff;
+    /* мягкий голубоватый текст */
+}
+
+/* Контейнер входа */
+.login-container {
+    max-width: 420px;
+    margin: 250px auto;
+    padding: 35px;
+    background-color: #1a1a40;
+    /* сине-фиолетовый фон контейнера */
+    border-radius: 16px;
+    border: 1px solid #6a5acd;
+    /* акцентная граница */
+    box-shadow: 0 0 15px rgba(106, 90, 205, 0.4),
+        0 0 25px rgba(106, 90, 205, 0.15);
+    text-align: center;
+}
+
+/* Заголовок */
+.login-title {
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: #9370db;
+    /* светлый фиолетовый */
+    text-shadow: 0 0 5px rgba(147, 112, 219, 0.5);
+}
+
+/* Группы формы */
+.login-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Поля ввода */
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #3d3d7a;
+    /* фиолетовая граница */
+    border-radius: 10px;
+    background-color: #24245b;
+    /* тёмно-синий фон поля */
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #6a5acd;
+    /* основной акцент */
+    box-shadow: 0 0 10px rgba(106, 90, 205, 0.5);
+}
+
+/* Кнопка входа */
+.login-button {
+    background-color: #6a5acd;
+    /* основной акцент (SlateBlue) */
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(106, 90, 205, 0.25);
+}
+
+.login-button:hover {
+    background-color: #483d8b;
+    /* тёмный акцент (DarkSlateBlue) */
+    box-shadow: 0 0 15px rgba(106, 90, 205, 0.4);
+}
+
+/* Ссылка на регистрацию */
+.register-link {
+    margin-top: 18px;
+    font-size: 14px;
+    color: #9370db;
+    /* светлый фиолетовый */
+    text-shadow: 0 0 3px rgba(147, 112, 219, 0.3);
+}
+
+.register-link a {
+    color: #a594f9;
+    /* яркий акцент для ссылок */
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.register-link a:hover {
+    color: #ffffff;
+}

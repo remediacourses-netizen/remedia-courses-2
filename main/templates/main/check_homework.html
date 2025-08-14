@@ -1,0 +1,297 @@
+{% extends 'base.html' %}
+{% block title %}Проверка домашнего задания{% endblock %}
+{% block content %}
+<style>
+    :root {
+        --primary: #2563eb;
+        --primary-hover: #1d4ed8;
+        --secondary: #3b82f6;
+        --text-dark: #1e293b;
+        --text-light: #64748b;
+        --bg-light: #f8fafc;
+        --card-bg: #ffffff;
+        --card-border: rgba(37, 99, 235, 0.1);
+        --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        --card-hover-shadow: 0 10px 25px rgba(37, 99, 235, 0.15);
+        --success: #10b981;
+        --warning: #f59e0b;
+    }
+
+    .homework-check-container {
+        max-width: 700px;
+        margin: 40px auto;
+        background-color: var(--card-bg);
+        color: var(--text-dark);
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: var(--card-shadow);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: 1px solid var(--card-border);
+    }
+
+    .homework-check-container h2 {
+        color: var(--primary);
+        margin-bottom: 25px;
+        font-size: 28px;
+        text-align: center;
+        position: relative;
+        padding-bottom: 15px;
+    }
+
+    .homework-check-container h2::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background: linear-gradient(90deg, var(--primary), var(--secondary));
+        border-radius: 2px;
+    }
+
+    .submission-info p {
+        margin: 12px 0;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .info-label {
+        font-weight: 600;
+        color: var(--text-dark);
+        display: inline-block;
+        width: 100px;
+    }
+
+    .info-label-data{
+        font-weight: 600;
+        color: var(--text-dark);
+        display: inline-block;
+        width: 130px;
+
+    }
+
+    .answer-block {
+        background-color: var(--bg-light);
+        padding: 20px;
+        border-left: 4px solid var(--primary);
+        margin: 25px 0;
+        border-radius: 8px;
+        box-shadow: var(--card-shadow);
+    }
+
+    .answer-block p {
+        margin: 8px 0;
+        color: var(--text-dark);
+    }
+
+    .download-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.2s ease;
+        padding: 6px 10px;
+        border-radius: 6px;
+        background-color: rgba(37, 99, 235, 0.08);
+    }
+
+    .download-link:hover {
+        background-color: rgba(37, 99, 235, 0.15);
+        text-decoration: underline;
+    }
+
+    .check-form {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid var(--card-border);
+    }
+
+    .check-form textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--bg-light);
+    border: 1px solid var(--card-border);
+    color: var(--text-dark);
+    border-radius: 8px;
+    resize: vertical;
+    margin-bottom: 20px;
+    font-family: inherit;
+    font-size: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+    /* добавляем это, чтобы не вылезало за рамку */
+    box-sizing: border-box;
+}
+
+
+    .check-form textarea:focus {
+        outline: none;
+        border-color: var(--primary);
+        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+    }
+
+    .save-button {
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        color: #fff;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .save-button:hover {
+        background: linear-gradient(135deg, var(--primary-hover), #2b6cb0);
+        box-shadow: 0 6px 10px rgba(37, 99, 235, 0.3);
+        transform: translateY(-2px);
+    }
+
+    .back-link {
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .back-link a {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        color: var(--text-light);
+        text-decoration: none;
+        font-size: 15px;
+        transition: color 0.2s ease;
+    }
+
+    .back-link a:hover {
+        color: var(--primary);
+        text-decoration: underline;
+    }
+
+    /* Адаптивность */
+@media (max-width: 768px) {
+    .homework-check-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    /* Делаем подписи над значениями */
+    .submission-info p {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .info-label,
+    .info-label-data {
+        display: block;
+        width: auto;
+        margin-bottom: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    .homework-check-container {
+        padding: 15px;
+    }
+
+    .homework-check-container h2 {
+        font-size: 22px;
+    }
+
+    .save-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Меньше отступов для answer-block */
+    .answer-block {
+        padding: 15px;
+        margin: 20px 0;
+    }
+
+    /* Кнопки и ссылки тянутся на всю ширину */
+    .download-link {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .back-link a {
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px) {
+    .check-form textarea {
+        font-size: 14px;
+    }
+}
+
+
+</style>
+
+<div class="homework-check-container">
+    <h2>Проверка домашнего задания</h2>
+
+    <div class="submission-info">
+        <p><span class="info-label">👤 Ученик:</span> {{ submission.student.get_full_name }}</p>
+        <p><span class="info-label">📚 Урок:</span> {{ submission.lesson.title }}</p>
+        <p><span class="info-label-data">📅 Отправлено:</span> {{ submission.submitted_at|date:"d.m.Y H:i" }}</p>
+
+        <div class="answer-block">
+            <p><strong>📝 Ответ ученика:</strong></p>
+            <div>{{ submission.answer|linebreaks }}</div>
+        </div>
+
+        {% if submission.file %}
+        <p>
+            <span class="info-label">📎 Файл:</span>
+            <a href="{{ submission.file.url }}" class="download-link" download>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                    <path
+                        d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                </svg>
+                Скачать файл
+            </a>
+        </p>
+        {% endif %}
+    </div>
+
+    <form method="post" action="{% url 'submit_homework_check' submission.id %}" class="check-form">
+        {% csrf_token %}
+        <label for="teacher-comment" style="display:block; margin-bottom:10px; font-weight:500;">
+            ✍️ Комментарий учителя:
+        </label>
+        <textarea id="teacher-comment" name="comment" rows="5"
+            placeholder="Напишите ваш комментарий к работе...">{{ submission.comment }}</textarea>
+
+        <div style="text-align: center;">
+            <button type="submit" class="save-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                        d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v7.293l2.646-2.647a.5.5 0 0 1 .708.708l-3.5 3.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L7.5 9.293V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1H2z" />
+                </svg>
+                Сохранить проверку
+            </button>
+        </div>
+    </form>
+
+    <div class="back-link">
+        <a href="{% url 'teacher_homework_list' %}">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+            </svg>
+            Назад к списку работ
+        </a>
+    </div>
+</div>
+{% endblock %}

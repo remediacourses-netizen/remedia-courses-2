@@ -1,0 +1,1755 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-08-12T14:39:19.740Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "2",
+    "object_repr": "Ansar-11",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-08-12T14:39:31.941Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "1",
+    "object_repr": "Психология",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-08-12T14:39:40.462Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "2",
+    "object_repr": "Возрастная психология",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-08-12T14:40:01.629Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "Sanzhar-23",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-08-12T14:40:10.052Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "Ansar Oralbay → Возрастная психология (преп: Sanzhar Oralbay)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-08-12T14:40:32.191Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "Психология",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-08-12T14:40:35.551Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Возрастная психология",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2025-08-12T15:02:35.106Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "4",
+    "object_repr": "Alim-24",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2025-08-12T15:02:45.160Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "2",
+    "object_repr": "Ansar Oralbay → Психология (преп: Alim Gaziz)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2025-08-12T15:08:56.987Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "2",
+    "object_repr": "Ansar Oralbay → Психология (преп: Alim Gaziz)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2025-08-12T15:08:56.987Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "Ansar Oralbay → Возрастная психология (преп: Sanzhar Oralbay)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2025-08-12T15:10:49.208Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "4",
+    "object_repr": "Alim-24",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2025-08-12T15:10:54.390Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "Sanzhar-23",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2025-08-12T15:16:17.091Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "3",
+    "object_repr": "Ansar Oralbay → Возрастная психология (преп: Sanzhar Oralbay)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2025-08-12T15:16:29.997Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "3",
+    "object_repr": "Ansar Oralbay → Возрастная психология (преп: Sanzhar Oralbay)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2025-08-12T15:26:28.489Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "3",
+    "object_repr": "Ansar Oralbay → Возрастная психология (преп: Sanzhar Oralbay)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2025-08-12T15:29:15.572Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "4",
+    "object_repr": "Ansar Oralbay → Психология (преп: Alim Gaziz)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2025-08-12T15:29:19.493Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "4",
+    "object_repr": "Ansar Oralbay → Психология (преп: Alim Gaziz)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2025-08-12T15:44:48.140Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "5",
+    "object_repr": "Ansar Oralbay → Возрастная психология (преп: Sanzhar Oralbay)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2025-08-12T15:46:24.658Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "1",
+    "object_repr": "Психология",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2025-08-12T15:47:46.864Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "1",
+    "object_repr": "Возрастная психология",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2025-08-12T15:48:11.045Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Возрастная психология",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2025-08-12T15:48:43.468Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "Модуль 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2025-08-12T15:50:02.759Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Урок 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0424\\u0430\\u0439\\u043b \\u0434\\u043e\\u043c\\u0430\\u0448\\u043d\\u0435\\u0439 \\u0440\\u0430\\u0431\\u043e\\u0442\\u044b\", \"object\": \"lesson_tasks/\\u0412\\u043e\\u0437\\u0440\\u0430\\u0441\\u0442\\u043d\\u0430\\u044f_\\u043f\\u0441\\u0438\\u0445\\u043e\\u043b\\u043e\\u0433\\u0438\\u044f_1_compressed_9myxI5i.pdf\"}}, {\"added\": {\"name\": \"\\u0424\\u0430\\u0439\\u043b \\u0434\\u043e\\u043c\\u0430\\u0448\\u043d\\u0435\\u0439 \\u0440\\u0430\\u0431\\u043e\\u0442\\u044b\", \"object\": \"lesson_tasks/\\u0417\\u0430\\u0434\\u0430\\u043d\\u0438\\u0435_\\u0434\\u043b\\u044f_\\u0443\\u0447\\u0430\\u0441\\u0442\\u043d\\u0438\\u043a\\u043e\\u0432_1_kDkYQDV.pdf\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2025-08-12T16:01:12.394Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Урок 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u0424\\u0430\\u0439\\u043b \\u0434\\u043e\\u043c\\u0430\\u0448\\u043d\\u0435\\u0439 \\u0440\\u0430\\u0431\\u043e\\u0442\\u044b\", \"object\": \"lesson_tasks/\\u0412\\u043e\\u0437\\u0440\\u0430\\u0441\\u0442\\u043d\\u0430\\u044f_\\u043f\\u0441\\u0438\\u0445\\u043e\\u043b\\u043e\\u0433\\u0438\\u044f_1_compressed_9myxI5i.pdf\", \"fields\": [\"\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u043f\\u0440\\u0430\\u043a\\u0442\\u0438\\u0447\\u0435\\u0441\\u043a\\u0438\\u0435 \\u0437\\u0430\\u0434\\u0430\\u043d\\u0438\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2025-08-12T16:01:23.574Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Урок 1",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2025-08-12T16:10:12.276Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Урок 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u043f\\u0440\\u0430\\u043a\\u0442\\u0438\\u0447\\u0435\\u0441\\u043a\\u0438\\u0435 \\u0437\\u0430\\u0434\\u0430\\u043d\\u0438\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2025-08-12T16:23:12.794Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "4",
+    "object_repr": "Alim-24",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0434\\u043c\\u0435\\u0442\\u044b, \\u043a\\u043e\\u0442\\u043e\\u0440\\u044b\\u0435 \\u043f\\u0440\\u0435\\u043f\\u043e\\u0434\\u0430\\u0451\\u0442\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2025-08-12T16:47:12.009Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Урок 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0424\\u0430\\u0439\\u043b \\u0434\\u043e\\u043c\\u0430\\u0448\\u043d\\u0435\\u0439 \\u0440\\u0430\\u0431\\u043e\\u0442\\u044b\", \"object\": \"lesson_tasks/\\u0422\\u0435\\u043e\\u0440\\u0435\\u0442\\u0438\\u0447\\u0435\\u0441\\u043a\\u043e\\u0435_\\u0437\\u0430\\u0434\\u0430\\u043d\\u0438\\u0435_\\u043a\\u043e_2-\\u0443_\\u0443\\u0440\\u043e\\u043a\\u0443.pdf.pdf\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2025-08-12T16:48:28.790Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Урок 1",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2025-08-12T16:49:07.398Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Урок 2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u043f\\u0440\\u0430\\u043a\\u0442\\u0438\\u0447\\u0435\\u0441\\u043a\\u0438\\u0435 \\u0437\\u0430\\u0434\\u0430\\u043d\\u0438\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2025-08-12T16:49:47.095Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Урок 3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2025-08-12T16:49:52.689Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Урок 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u043f\\u0440\\u0430\\u043a\\u0442\\u0438\\u0447\\u0435\\u0441\\u043a\\u0438\\u0435 \\u0437\\u0430\\u0434\\u0430\\u043d\\u0438\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2025-08-12T16:49:56.081Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Урок 2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u043f\\u0440\\u0430\\u043a\\u0442\\u0438\\u0447\\u0435\\u0441\\u043a\\u0438\\u0435 \\u0437\\u0430\\u0434\\u0430\\u043d\\u0438\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2025-08-12T16:51:18.332Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Урок 3",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"\\u0424\\u0430\\u0439\\u043b \\u0434\\u043e\\u043c\\u0430\\u0448\\u043d\\u0435\\u0439 \\u0440\\u0430\\u0431\\u043e\\u0442\\u044b\", \"object\": \"lesson_tasks/\\u0421\\u043f\\u0438\\u0441\\u043e\\u043a_\\u0447\\u0443\\u0432\\u0441\\u0442\\u0432.pdf\"}}, {\"added\": {\"name\": \"\\u0424\\u0430\\u0439\\u043b \\u0434\\u043e\\u043c\\u0430\\u0448\\u043d\\u0435\\u0439 \\u0440\\u0430\\u0431\\u043e\\u0442\\u044b\", \"object\": \"lesson_tasks/\\u042d\\u043c\\u043e\\u0446\\u0438\\u0438_\\u0432_\\u0441\\u043e\\u0446\\u0438\\u0430\\u043b\\u044c\\u043d\\u044b\\u0445_\\u043f\\u0440\\u043e\\u0446\\u0435\\u0441\\u0441\\u0430\\u0445.pdf\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2025-08-12T16:51:49.537Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Урок 4",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0424\\u0430\\u0439\\u043b \\u0434\\u043e\\u043c\\u0430\\u0448\\u043d\\u0435\\u0439 \\u0440\\u0430\\u0431\\u043e\\u0442\\u044b\", \"object\": \"lesson_tasks/\\u0421\\u043a\\u0430\\u0447\\u0430\\u0442\\u044c_\\u0444\\u0430\\u0438\\u043b_\\u041f\\u0438\\u0440\\u0430\\u043c\\u0438\\u0434\\u0430_\\u0414\\u0438\\u043b\\u0442\\u0441\\u0430_\\u0441\\u0442\\u0430\\u0442\\u044c\\u044f_\\u0438_\\u0433\\u0430\\u0438\\u0434.docx\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2025-08-12T16:52:28.162Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Урок 5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0424\\u0430\\u0439\\u043b \\u0434\\u043e\\u043c\\u0430\\u0448\\u043d\\u0435\\u0439 \\u0440\\u0430\\u0431\\u043e\\u0442\\u044b\", \"object\": \"lesson_tasks/\\u0422\\u0435\\u0441\\u0442\\u044b.docx\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2025-08-12T16:52:42.676Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Модуль 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2025-08-12T17:01:38.737Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Урок 6",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0424\\u0430\\u0439\\u043b \\u0434\\u043e\\u043c\\u0430\\u0448\\u043d\\u0435\\u0439 \\u0440\\u0430\\u0431\\u043e\\u0442\\u044b\", \"object\": \"lesson_tasks/\\u041e\\u043f\\u0438\\u0448\\u0438\\u0442\\u0435_\\u044d\\u043c\\u043e\\u0446\\u0438\\u043e\\u043d\\u0430\\u043b\\u044c\\u043d\\u044b\\u0435_\\u043a\\u0440\\u0438\\u0437\\u0438\\u0441\\u044b_\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0433\\u043e_\\u0433\\u0435\\u0440\\u043e\\u044f_\\u043c\\u0443\\u043b\\u044c\\u0442\\u0444\\u0438\\u043b\\u044c\\u043c\\u0430_\\u0447\\u0435\\u0440\\u0435\\u0437_\\u0437\\u0430\\u0432\\u0438\\u0441\\u0438\\u043c\\u043e\\u0441\\u0442\\u044c..mp4\"}}, {\"added\": {\"name\": \"\\u0424\\u0430\\u0439\\u043b \\u0434\\u043e\\u043c\\u0430\\u0448\\u043d\\u0435\\u0439 \\u0440\\u0430\\u0431\\u043e\\u0442\\u044b\", \"object\": \"lesson_tasks/\\u041f\\u0440\\u0430\\u043a\\u0442\\u0438\\u0447\\u0435\\u0441\\u043a\\u043e\\u0435_\\u0437\\u0430\\u0434\\u0430\\u043d\\u0438\\u0435_\\u043d\\u0430_10_\\u0434\\u043d\\u0435\\u0439_.docx\"}}, {\"added\": {\"name\": \"\\u0424\\u0430\\u0439\\u043b \\u0434\\u043e\\u043c\\u0430\\u0448\\u043d\\u0435\\u0439 \\u0440\\u0430\\u0431\\u043e\\u0442\\u044b\", \"object\": \"lesson_tasks/\\u041a\\u043e\\u043d\\u0441\\u043f\\u0435\\u043a\\u0442_\\u043b\\u0435\\u043a\\u0446\\u0438\\u0438_\\u041f\\u0435\\u0440\\u0438\\u043e\\u0434_\\u044e\\u043d\\u043e\\u0441\\u0442\\u0438_\\u043e\\u0442_14_\\u0434\\u043e_21_\\u0433\\u043e\\u0434\\u0430_\\u041a\\u0440\\u0438\\u0437\\u0438\\u0441_\\u044e\\u043d\\u043e\\u0441\\u0442\\u0438.pdf\"}}, {\"added\": {\"name\": \"\\u0424\\u0430\\u0439\\u043b \\u0434\\u043e\\u043c\\u0430\\u0448\\u043d\\u0435\\u0439 \\u0440\\u0430\\u0431\\u043e\\u0442\\u044b\", \"object\": \"lesson_tasks/\\u0418\\u043d\\u0434\\u0435\\u043a\\u0441_\\u0436\\u0438\\u0437\\u043d\\u0435\\u043d\\u043d\\u043e\\u0433\\u043e_\\u0441\\u0442\\u0438\\u043b\\u044f.pdf\"}}, {\"added\": {\"name\": \"\\u0424\\u0430\\u0439\\u043b \\u0434\\u043e\\u043c\\u0430\\u0448\\u043d\\u0435\\u0439 \\u0440\\u0430\\u0431\\u043e\\u0442\\u044b\", \"object\": \"lesson_tasks/\\u0412\\u0437\\u0430\\u0438\\u043c\\u043e\\u0441\\u0432\\u044f\\u0437\\u044c_\\u043e\\u0441\\u043e\\u0431\\u0435\\u043d\\u043d\\u043e\\u0441\\u0442\\u0435\\u0439_\\u0434\\u0435\\u0442\\u0441\\u043a\\u043e_\\u0440\\u043e\\u0434\\u0438\\u0442\\u0435\\u043b\\u044c\\u0441\\u043a\\u043e\\u0433\\u043e_\\u0432\\u0437\\u0430\\u0438\\u043c\\u043e\\u0434\\u0435\\u0439\\u0441\\u0442\\u0432\\u0438\\u044f_\\u0438_\\u043a\\u043e\\u043f\\u0438\\u043d\\u0433.pdf\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2025-08-12T17:02:26.535Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "Урок 7",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0424\\u0430\\u0439\\u043b \\u0434\\u043e\\u043c\\u0430\\u0448\\u043d\\u0435\\u0439 \\u0440\\u0430\\u0431\\u043e\\u0442\\u044b\", \"object\": \"lesson_tasks/13aea3ea-e729-4965-8829-6876e8ad98a5.JPG\"}}, {\"added\": {\"name\": \"\\u0424\\u0430\\u0439\\u043b \\u0434\\u043e\\u043c\\u0430\\u0448\\u043d\\u0435\\u0439 \\u0440\\u0430\\u0431\\u043e\\u0442\\u044b\", \"object\": \"lesson_tasks/\\u0422\\u0440\\u0430\\u043d\\u0437\\u0430\\u043a\\u0446\\u0438\\u0438_20_25_\\u0430\\u043d\\u0430\\u043b\\u0438\\u0437_1\\u043f\\u043b\\u044e\\u04411.pptx\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2025-08-13T14:55:29.223Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2025-08-13T15:00:56.112Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "3",
+    "object_repr": "упуыпфп",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0424\\u0430\\u0439\\u043b \\u043a\\u043d\\u0438\\u0433\\u0438\", \"object\": \"library_files/\\u0422\\u0440\\u0430\\u043d\\u0437\\u0430\\u043a\\u0446\\u0438\\u0438_20_25_\\u0430\\u043d\\u0430\\u043b\\u0438\\u0437_1\\u043f\\u043b\\u044e\\u04411.pptx\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2025-08-13T16:38:25.863Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "1",
+    "object_repr": "Возрастная психология",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2025-08-13T16:40:31.008Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "1",
+    "object_repr": "Возрастная психология",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2025-08-13T16:42:41.097Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "1",
+    "object_repr": "Возрастная психология",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2025-08-13T16:43:02.285Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "2",
+    "object_repr": "Возрастная психология",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2025-08-13T19:29:41.005Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "2",
+    "object_repr": "Возрастная психология",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2025-08-13T19:45:13.607Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "2",
+    "object_repr": "Возрастная психология",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2025-08-13T20:59:16.384Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "2",
+    "object_repr": "Возрастная психология",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2025-08-13T20:59:55.410Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "2",
+    "object_repr": "Возрастная психология",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2025-08-14T11:06:32.897Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "3",
+    "object_repr": "Блог 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2025-08-14T11:07:47.476Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "3",
+    "object_repr": "Блог 2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 4,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 4,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 4,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 4,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 5,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 5,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 5,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 5,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add blogs",
+    "content_type": 6,
+    "codename": "add_blogs"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change blogs",
+    "content_type": 6,
+    "codename": "change_blogs"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete blogs",
+    "content_type": 6,
+    "codename": "delete_blogs"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view blogs",
+    "content_type": 6,
+    "codename": "view_blogs"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add about courses",
+    "content_type": 7,
+    "codename": "add_aboutcourses"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change about courses",
+    "content_type": 7,
+    "codename": "change_aboutcourses"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete about courses",
+    "content_type": 7,
+    "codename": "delete_aboutcourses"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view about courses",
+    "content_type": 7,
+    "codename": "view_aboutcourses"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add Урок",
+    "content_type": 8,
+    "codename": "add_lesson"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change Урок",
+    "content_type": 8,
+    "codename": "change_lesson"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete Урок",
+    "content_type": 8,
+    "codename": "delete_lesson"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view Урок",
+    "content_type": 8,
+    "codename": "view_lesson"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add homework submission",
+    "content_type": 9,
+    "codename": "add_homeworksubmission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change homework submission",
+    "content_type": 9,
+    "codename": "change_homeworksubmission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete homework submission",
+    "content_type": 9,
+    "codename": "delete_homeworksubmission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view homework submission",
+    "content_type": 9,
+    "codename": "view_homeworksubmission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add Файл домашней работы",
+    "content_type": 10,
+    "codename": "add_lessontaskfile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change Файл домашней работы",
+    "content_type": 10,
+    "codename": "change_lessontaskfile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete Файл домашней работы",
+    "content_type": 10,
+    "codename": "delete_lessontaskfile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view Файл домашней работы",
+    "content_type": 10,
+    "codename": "view_lessontaskfile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add library",
+    "content_type": 11,
+    "codename": "add_library"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change library",
+    "content_type": 11,
+    "codename": "change_library"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete library",
+    "content_type": 11,
+    "codename": "delete_library"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view library",
+    "content_type": 11,
+    "codename": "view_library"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add module",
+    "content_type": 12,
+    "codename": "add_module"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change module",
+    "content_type": 12,
+    "codename": "change_module"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete module",
+    "content_type": 12,
+    "codename": "delete_module"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view module",
+    "content_type": 12,
+    "codename": "view_module"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add subject",
+    "content_type": 13,
+    "codename": "add_subject"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change subject",
+    "content_type": 13,
+    "codename": "change_subject"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete subject",
+    "content_type": 13,
+    "codename": "delete_subject"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view subject",
+    "content_type": 13,
+    "codename": "view_subject"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add custom user",
+    "content_type": 14,
+    "codename": "add_customuser"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change custom user",
+    "content_type": 14,
+    "codename": "change_customuser"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete custom user",
+    "content_type": 14,
+    "codename": "delete_customuser"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view custom user",
+    "content_type": 14,
+    "codename": "view_customuser"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add user subject",
+    "content_type": 15,
+    "codename": "add_usersubject"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change user subject",
+    "content_type": 15,
+    "codename": "change_usersubject"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete user subject",
+    "content_type": 15,
+    "codename": "delete_usersubject"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view user subject",
+    "content_type": 15,
+    "codename": "view_usersubject"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add Файл книги",
+    "content_type": 16,
+    "codename": "add_libraryfile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change Файл книги",
+    "content_type": 16,
+    "codename": "change_libraryfile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete Файл книги",
+    "content_type": 16,
+    "codename": "delete_libraryfile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view Файл книги",
+    "content_type": 16,
+    "codename": "view_libraryfile"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "main",
+    "model": "blogs"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "main",
+    "model": "aboutcourses"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "main",
+    "model": "lesson"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "main",
+    "model": "homeworksubmission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "main",
+    "model": "lessontaskfile"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "main",
+    "model": "library"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "main",
+    "model": "module"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "accounts",
+    "model": "subject"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "accounts",
+    "model": "customuser"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "accounts",
+    "model": "usersubject"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 16,
+  "fields": {
+    "app_label": "main",
+    "model": "libraryfile"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "2tixsinzrupb7o9k2nf4fs72l7spdh9c",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hBgSuu4dN8zkBkGpGpoUtqV8e7apAvd_vfef6lA21rC1tISJlEXZdXpd2OKj1R3IHeqt1nHua7LxHpX9EGbHmdJz-vh_h0UauVb5wTWciYn2YH30IsIohBaw9mQRNMzGLIUIROeO2TnhJ3HAToZEqn3BwbqOKs:1umEbp:NZftGOj2-h3aTSh_CThOpxHmufP3RFkb30ETJjN7pUE",
+    "expire_date": "2025-08-27T16:45:53.427Z"
+  }
+},
+{
+  "model": "main.module",
+  "pk": 1,
+  "fields": {
+    "title": "Модуль 1",
+    "subject": 2
+  }
+},
+{
+  "model": "main.module",
+  "pk": 2,
+  "fields": {
+    "title": "Модуль 2",
+    "subject": 2
+  }
+},
+{
+  "model": "main.lesson",
+  "pk": 1,
+  "fields": {
+    "title": "Урок 1",
+    "description": "",
+    "video_url": "https://youtu.be/JT6YIHbVSFA?si=SEazzrXOddk5fCMk",
+    "task_url": "",
+    "module": 1,
+    "subject": 2
+  }
+},
+{
+  "model": "main.lesson",
+  "pk": 2,
+  "fields": {
+    "title": "Урок 2",
+    "description": "",
+    "video_url": "",
+    "task_url": "https://youtu.be/RPCGsh7PqO8?si=_0mA-RlOW-_",
+    "module": 1,
+    "subject": 2
+  }
+},
+{
+  "model": "main.lesson",
+  "pk": 3,
+  "fields": {
+    "title": "Урок 3",
+    "description": "",
+    "video_url": "https://youtu.be/sh-MMz8WrV4?si=UQjQnVcjWpZIaX4m",
+    "task_url": "https://youtu.be/zzOqZ5Mp1E4?si=b_du51NvPPtWQ14c",
+    "module": 1,
+    "subject": 2
+  }
+},
+{
+  "model": "main.lesson",
+  "pk": 4,
+  "fields": {
+    "title": "Урок 4",
+    "description": "",
+    "video_url": "https://youtu.be/ZfGu_0gK4lY?si=AF4uJAtx2l-p8nVe",
+    "task_url": "",
+    "module": 1,
+    "subject": 2
+  }
+},
+{
+  "model": "main.lesson",
+  "pk": 5,
+  "fields": {
+    "title": "Урок 5",
+    "description": "",
+    "video_url": "https://youtu.be/dhB82d79r0c?si=RqzE8IsD8X_oX-ao",
+    "task_url": "",
+    "module": 1,
+    "subject": 2
+  }
+},
+{
+  "model": "main.lesson",
+  "pk": 6,
+  "fields": {
+    "title": "Урок 6",
+    "description": "",
+    "video_url": "https://youtu.be/dhB82d79r0c?si=RqzE8IsD8X_oX-ao",
+    "task_url": "",
+    "module": 2,
+    "subject": 2
+  }
+},
+{
+  "model": "main.lesson",
+  "pk": 7,
+  "fields": {
+    "title": "Урок 7",
+    "description": "",
+    "video_url": "https://youtu.be/fxkCvJnhF3w?si=dEGBvrg7dBEv-vNe",
+    "task_url": "",
+    "module": 2,
+    "subject": 2
+  }
+},
+{
+  "model": "main.lessontaskfile",
+  "pk": 1,
+  "fields": {
+    "lesson": 1,
+    "file": "lesson_tasks/Возрастная_психология_1_compressed_9myxI5i.pdf"
+  }
+},
+{
+  "model": "main.lessontaskfile",
+  "pk": 2,
+  "fields": {
+    "lesson": 1,
+    "file": "lesson_tasks/Задание_для_участников_1_kDkYQDV.pdf"
+  }
+},
+{
+  "model": "main.lessontaskfile",
+  "pk": 3,
+  "fields": {
+    "lesson": 2,
+    "file": "lesson_tasks/Теоретическое_задание_ко_2-у_уроку.pdf.pdf"
+  }
+},
+{
+  "model": "main.lessontaskfile",
+  "pk": 4,
+  "fields": {
+    "lesson": 3,
+    "file": "lesson_tasks/Список_чувств.pdf"
+  }
+},
+{
+  "model": "main.lessontaskfile",
+  "pk": 5,
+  "fields": {
+    "lesson": 3,
+    "file": "lesson_tasks/Эмоции_в_социальных_процессах.pdf"
+  }
+},
+{
+  "model": "main.lessontaskfile",
+  "pk": 6,
+  "fields": {
+    "lesson": 4,
+    "file": "lesson_tasks/Скачать_фаил_Пирамида_Дилтса_статья_и_гаид.docx"
+  }
+},
+{
+  "model": "main.lessontaskfile",
+  "pk": 7,
+  "fields": {
+    "lesson": 5,
+    "file": "lesson_tasks/Тесты.docx"
+  }
+},
+{
+  "model": "main.lessontaskfile",
+  "pk": 8,
+  "fields": {
+    "lesson": 6,
+    "file": "lesson_tasks/Опишите_эмоциональные_кризисы_главного_героя_мультфильма_через_зависимость..mp4"
+  }
+},
+{
+  "model": "main.lessontaskfile",
+  "pk": 9,
+  "fields": {
+    "lesson": 6,
+    "file": "lesson_tasks/Практическое_задание_на_10_дней_.docx"
+  }
+},
+{
+  "model": "main.lessontaskfile",
+  "pk": 10,
+  "fields": {
+    "lesson": 6,
+    "file": "lesson_tasks/Конспект_лекции_Период_юности_от_14_до_21_года_Кризис_юности.pdf"
+  }
+},
+{
+  "model": "main.lessontaskfile",
+  "pk": 11,
+  "fields": {
+    "lesson": 6,
+    "file": "lesson_tasks/Индекс_жизненного_стиля.pdf"
+  }
+},
+{
+  "model": "main.lessontaskfile",
+  "pk": 12,
+  "fields": {
+    "lesson": 6,
+    "file": "lesson_tasks/Взаимосвязь_особенностей_детско_родительского_взаимодействия_и_копинг.pdf"
+  }
+},
+{
+  "model": "main.lessontaskfile",
+  "pk": 13,
+  "fields": {
+    "lesson": 7,
+    "file": "lesson_tasks/13aea3ea-e729-4965-8829-6876e8ad98a5.JPG"
+  }
+},
+{
+  "model": "main.lessontaskfile",
+  "pk": 14,
+  "fields": {
+    "lesson": 7,
+    "file": "lesson_tasks/Транзакции_20_25_анализ_1плюс1.pptx"
+  }
+},
+{
+  "model": "main.homeworksubmission",
+  "pk": 1,
+  "fields": {
+    "lesson": 1,
+    "student": 2,
+    "teacher": 3,
+    "answer": "Круто",
+    "submitted_at": "2025-08-12T16:22:27.004Z",
+    "file": "",
+    "comment": "Вы молодец",
+    "checked": true
+  }
+},
+{
+  "model": "main.blogs",
+  "pk": 2,
+  "fields": {
+    "title": "Возрастная психология",
+    "photo": "blogs_image\\блог1_YY5gRWv.jpg",
+    "main_text": "Дети, кричащие на своих учителей, отражают отношение родителей к ним таким же образом.\r\n\r\nСуществует множество историй о притеснениях, криках и оскорблениях в адрес учителей в классе, возможно, даже слишком много. Одна из последних произошла с учителем старшей. Однажды, придя в класс, он обнаружил ученицу, сидящую спиной к доске. Он попросил её повернуться, но 13-летняя ученица ответила: « Разве ты не пришла учить? Тогда учи класс и оставь меня в покое ».\r\n\r\nУ этой же девочки были проблемы с другими учителями, пока школа не решила обратиться к семье. Учительница с 25-летним стажем работы призналась, что лекарство оказалось едва ли не хуже болезни, потому что отец открыто заявил учителям, что они «не любят» его дочь.\r\n\r\nК сожалению, эта история не является чем-то исключительным, а, скорее, весьма распространена; это капля в море, с которой учителям приходится сталкиваться каждый день.",
+    "file": ""
+  }
+},
+{
+  "model": "main.aboutcourses",
+  "pk": 1,
+  "fields": {
+    "subject": 2,
+    "description": "Возрастная психология — это раздел психологии, изучающий закономерности психического развития человека на разных этапах жизни: от рождения до старости.\r\n\r\nНа курсе вы узнаете:\r\n\r\n- ключевые теории возрастного развития;\r\n- особенности психики в детском, подростковом, зрелом и пожилом возрасте;\r\n- возрастные кризисы и пути их преодоления;\r\n- как определить, какие кризисы человек не прошёл, и помочь прожить их гармонично;\r\n- влияние социальных и биологических факторов на развитие личности.\r\n\r\nФормат обучения:\r\n\r\n-2 модуля, 8–10 уроков;\r\n- теоретические и практические задания;\r\n- работа в тройках для отработки навыков;\r\n- супервизия и разбор реальных кейсов.\r\n\r\n📌 Вы научитесь понимать внутренние процессы человека в разные периоды жизни, определять причины его текущего состояния и использовать эти знания в работе и личной жизни."
+  }
+},
+{
+  "model": "main.library",
+  "pk": 3,
+  "fields": {
+    "subject": 2,
+    "title": "упуыпфп",
+    "author": "пфпвпфвпвф"
+  }
+},
+{
+  "model": "main.libraryfile",
+  "pk": 1,
+  "fields": {
+    "library": 3,
+    "file": "library_files/Транзакции_20_25_анализ_1плюс1.pptx"
+  }
+},
+{
+  "model": "accounts.subject",
+  "pk": 2,
+  "fields": {
+    "name": "Возрастная психология"
+  }
+},
+{
+  "model": "accounts.customuser",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$MXPK34SuV3xKx46ACPJtEH$sFJVKIQZLZJrZ4JuUxnSBnHs/2mDGgbCc8Lf+rYlfZs=",
+    "last_login": "2025-08-14T11:05:52.159Z",
+    "is_superuser": true,
+    "is_student": false,
+    "is_teacher": false,
+    "username": "Anzik",
+    "first_name": "Ansar",
+    "last_name": "Oralbay",
+    "is_active": true,
+    "is_staff": true,
+    "groups": [],
+    "user_permissions": [],
+    "subjects_taught": [],
+    "subjects": [],
+    "teachers": []
+  }
+},
+{
+  "model": "accounts.customuser",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$oKFa9snCNBfZs1uIVExPxQ$k6RD3L7agKJYdzN7U16WDi2WzloMeW2EW5cg389LkTU=",
+    "last_login": "2025-08-13T21:08:34.286Z",
+    "is_superuser": false,
+    "is_student": true,
+    "is_teacher": false,
+    "username": "Ansar-11",
+    "first_name": "Ansar",
+    "last_name": "Oralbay",
+    "is_active": true,
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": [],
+    "subjects_taught": [],
+    "subjects": [],
+    "teachers": []
+  }
+},
+{
+  "model": "accounts.customuser",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$dPtfYmyDSgssPvuqiqM2xD$su9Tq+34tIzOUAWy6wfxUQ9FNJQzzKeYbcIvNU4TblQ=",
+    "last_login": "2025-08-12T16:23:32.210Z",
+    "is_superuser": false,
+    "is_student": false,
+    "is_teacher": true,
+    "username": "Sanzhar-23",
+    "first_name": "Sanzhar",
+    "last_name": "Oralbay",
+    "is_active": true,
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": [],
+    "subjects_taught": [
+      2
+    ],
+    "subjects": [],
+    "teachers": []
+  }
+},
+{
+  "model": "accounts.customuser",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$hnn6nrNTnW9rvHrbZIRGJ0$WVyx2hpcyFqfGruCpnq9HCzQHPiCDcW0XYORu0CW+hk=",
+    "last_login": "2025-08-12T16:23:22.562Z",
+    "is_superuser": false,
+    "is_student": false,
+    "is_teacher": true,
+    "username": "Alim-24",
+    "first_name": "Alim",
+    "last_name": "Gaziz",
+    "is_active": true,
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": [],
+    "subjects_taught": [
+      2
+    ],
+    "subjects": [],
+    "teachers": []
+  }
+},
+{
+  "model": "accounts.usersubject",
+  "pk": 5,
+  "fields": {
+    "user": 2,
+    "subject": 2,
+    "teacher": 3
+  }
+}
+]

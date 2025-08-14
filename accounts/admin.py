@@ -26,9 +26,11 @@ class CustomUserAdmin(UserAdmin):
     add_fieldsets = (
         (None, {
             'classes': ('wide',),
-            'fields': ('username', 'first_name', 'last_name', 'password1', 'password2', 'is_teacher', 'is_student', 'subjects_taught'),
-        }),
+            'fields': ('username', 'first_name', 'last_name', 'password1', 'password2',
+                       'is_teacher', 'is_student', 'subjects_taught'),
+         }),
     )
+
 
     filter_horizontal = ('groups', 'user_permissions',)
 

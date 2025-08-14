@@ -73,35 +73,37 @@ class TeacherSelectionForm(forms.Form):
                     required=True,
                 )
 
-class EditUserForm(forms.ModelForm):
-    class Meta:
-        model = User
-        fields = ['first_name', 'last_name', 'email']  # можно добавить username, если нужно
-        labels = {
-            'first_name': 'Имя',
-            'last_name': 'Фамилия',
-            'username': 'Логин',
-        }
+
 
 class CustomUserAdminForm(forms.ModelForm):
     class Meta:
         model = CustomUser
-        fields = ('username', 'first_name', 'last_name', 'password', 'is_teacher', 'is_student', 'subjects_taught')
+        fields = ('username', 'first_name', 'last_name', 'email', 'password', 
+                 'is_teacher', 'is_student', 'subjects_taught',
+                 'is_staff', 'is_superuser')  # Добавлены ключевые поля
         labels = {
             'first_name': 'Имя',
             'last_name': 'Фамилия',
             'username': 'Логин',
+            'email': 'Email',
             'subjects_taught': 'Предметы, которые преподаёт',
             'is_teacher': 'Преподаватель',
             'is_student': 'Ученик',
+            'is_staff': 'Доступ в админку',
+            'is_superuser': 'Суперпользователь',
+        }
+        widgets = {
+            'password': forms.PasswordInput(),
         }
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-
-        # Изначально скрываем поле
-        if not self.instance.is_teacher:
-            self.fields['subjects_taught'].widget = forms.HiddenInput()
+        # Условное отображение поля subjects_taught
+        if 'is_teacher' in self.fields and 'subjects_taught' in self.fields:
+            if not self.instance.is_teacher:
+                self.fields['subjects_taught'].widget = forms.HiddenInput()
+            else:
+                self.fields['subjects_taught'].widget = forms.SelectMultiple()
 
 
 

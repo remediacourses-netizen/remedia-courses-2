@@ -86,7 +86,7 @@ class EditUserForm(forms.ModelForm):
 class CustomUserAdminForm(forms.ModelForm):
     class Meta:
         model = CustomUser
-        fields = '__all__'
+        fields = ('username', 'first_name', 'last_name', 'password', 'is_teacher', 'is_student', 'subjects_taught')
         labels = {
             'first_name': 'Имя',
             'last_name': 'Фамилия',

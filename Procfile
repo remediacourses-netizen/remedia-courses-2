@@ -1,1 +1,1 @@
-web: gunicorn course_platform.wsgi
+web: gunicorn config.wsgi

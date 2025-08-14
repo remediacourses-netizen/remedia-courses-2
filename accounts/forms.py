@@ -76,6 +76,16 @@ class TeacherSelectionForm(forms.Form):
 
 
 
+class EditUserForm(forms.ModelForm):
+    class Meta:
+        model = User
+        fields = ['first_name', 'last_name', 'email']  # можно добавить username, если нужно
+        labels = {
+            'first_name': 'Имя',
+            'last_name': 'Фамилия',
+            'username': 'Логин',
+        }
+
 class CustomUserAdminForm(forms.ModelForm):
     class Meta:
         model = CustomUser

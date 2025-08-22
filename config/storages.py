@@ -94,12 +94,14 @@ class GoogleDriveStorage(Storage):
         if hasattr(content, 'seek'):
             content.seek(0)
         
+        if hasattr(content, 'seek'):
+            content.seek(0)
+
         media = MediaIoBaseUpload(
-            io.BytesIO(content.read()),
+            content,
             mimetype=mime_type,
             resumable=True
         )
-
         # Обновляем или создаем файл
         existing_file_id = self._get_file_id(name)
         if existing_file_id:

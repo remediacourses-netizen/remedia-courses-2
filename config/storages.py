@@ -14,23 +14,20 @@ class GoogleDriveStorage(Storage):
         self.folder_id = settings.GOOGLE_DRIVE_FOLDER_ID
 
     def _get_credentials(self):
-        # Создаем объект учетных данных
         creds = Credentials(
-            token=None,  # Изначально нет токена
+            token=None,
             refresh_token=settings.GOOGLE_DRIVE_REFRESH_TOKEN,
             client_id=settings.GOOGLE_CLIENT_ID,
             client_secret=settings.GOOGLE_CLIENT_SECRET,
             token_uri='https://oauth2.googleapis.com/token'
         )
-         # Автообновление токена
-        if creds.expired:
-            try:
-                creds.refresh(Request())
-                print("Токен успешно обновлён!")
-            except Exception as e:
-                print(f"Ошибка обновления токена: {e}")
-    
+        try:
+            creds.refresh(Request())  # всегда обновляем access_token
+            print("Токен успешно обновлён!")
+        except Exception as e:
+            print(f"Ошибка обновления токена: {e}")
         return creds
+
         
 
     def _get_or_create_folder(self, folder_name, parent_id=None):
@@ -91,17 +88,11 @@ class GoogleDriveStorage(Storage):
         mime_type = mime_type or 'application/octet-stream'
 
         # Перемотка файла на начало
-        if hasattr(content, 'seek'):
-            content.seek(0)
-        
-        if hasattr(content, 'seek'):
-            content.seek(0)
+        if hasattr(content, "open"):
+            content.open()
+        content.seek(0)
+        media = MediaIoBaseUpload(content, mimetype=mime_type, resumable=True)
 
-        media = MediaIoBaseUpload(
-            content,
-            mimetype=mime_type,
-            resumable=True
-        )
         # Обновляем или создаем файл
         existing_file_id = self._get_file_id(name)
         if existing_file_id:

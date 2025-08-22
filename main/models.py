@@ -54,7 +54,7 @@ class LessonTaskFile(models.Model):
     lesson = models.ForeignKey(Lesson, on_delete=models.CASCADE, related_name='task_files')
     file = models.FileField(upload_to='lesson_tasks/', storage=gd_storage, verbose_name='Прикрепите файлы домашней работы')
     def __str__(self):
-        return self.file.name
+        return str(self.file) if self.file else "Файл не загружен"
     class Meta:
         verbose_name = 'Файл домашней работы'
         verbose_name_plural = 'Файлы домашней работы'

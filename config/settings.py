@@ -24,9 +24,9 @@ load_dotenv()
 SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-запасной-ключ-только-для-разработки')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG', 'False') == 'True'
+DEBUG = True
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',') + ['*']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition

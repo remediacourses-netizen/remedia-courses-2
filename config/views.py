@@ -21,7 +21,7 @@ def oauth2callback(request):
     )
 
     # 👇 ОБЯЗАТЕЛЬНО прописать redirect_uri
-    flow.redirect_uri = "https://remedia.kz/oauth2callback/"
+    flow.redirect_uri = "https://remedia.kz/oauth2callback"
 
     # 👇 меняем код на токен
     flow.fetch_token(code=code)

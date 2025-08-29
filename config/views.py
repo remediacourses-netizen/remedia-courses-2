@@ -8,7 +8,7 @@ def oauth2callback(request):
     flow = Flow.from_client_secrets_file(
         'client_secret.json',
         scopes=['https://www.googleapis.com/auth/drive.file'],
-        redirect_uri='http://127.0.0.1:8000/oauth2callback'
+        redirect_uri='http://remedia.kz/oauth2callback'
     )
     flow.fetch_token(code=code)
 

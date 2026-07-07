@@ -1,8 +1,14 @@
 [phases.setup]
-nixPkgs = ["python311Full", "gcc"]
+nixPkgs = [
+  "python311Full",
+  "python311Packages.pip",
+  "python311Packages.setuptools",
+  "python311Packages.wheel",
+  "gcc"
+]
 
 [phases.install]
-cmds = ["pip install -r requirements.txt"]
+cmds = ["python -m pip install -r requirements.txt"]
 
 [start]
-cmd = "gunicorn config.wsgi:application --bind 0.0.0.0:$PORT"
+cmd = "python -m gunicorn config.wsgi:application --bind 0.0.0.0:$PORT"
